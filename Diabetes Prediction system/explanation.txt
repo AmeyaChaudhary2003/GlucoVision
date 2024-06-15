@@ -1,0 +1,39 @@
+TO RUN IT TYPE  in cmd: streamlit run "D:\Diabetes Prediction system\app.py"
+
+
+RandomForestClassifier was chosen because it's robust, handles non-linear relationships well, and reduces overfitting compared to a single decision tree. It's suitable for this classification task as it can handle both numerical and categorical data.
+
+#this is random forest on the basis of,
+rf = RandomForestClassifier()
+rf.fit(x_train, y_train)
+
+
+but due to low accuracy SVM was chosen later
+SVM
+# MODEL
+svm = SVC(kernel='linear', C=1.0, random_state=0)
+svm.fit(x_train, y_train)
+user_result = svm.predict(user_data)
+
+Advantages:
+
+May perform well with smaller datasets, like yours might be.
+Can be effective for high-dimensional data (many features).
+Offers good interpretability in some cases, potentially helping understand the model's decision making process.
+Disadvantages:
+
+Finding the optimal hyperparameters for SVM can be more challenging than Random Forest.
+May not be as robust to outliers in the data.
+
+
+*Fit():
+	 Method for training the model. When you call the fit() method, the model adjusts its parameters (or coefficients) to minimize the difference between the predicted output and the actual target variable in the training data. This process is often referred to as "training" the model.
+
+We have calculated its accuracy using accuracy_score() function
+
+
+https://www.youtube.com/watch?v=Vfrh_2IR8mE
+
+
+DIFFICULTIES:
+		1.
